@@ -1,0 +1,13 @@
+#imgLogo {
+    height: 200px;
+    border: 1px black solid;
+}
+
+#promocao {
+    height: 50vh;
+}
+
+tr, td {
+    height: 25vh;
+    width: 25vw;
+}
