@@ -1,13 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #imgLogo {
-    height: 200px;
-    border: 1px black solid;
+    height: 15vh;
+    padding-left: 2vw;
+
+}
+
+#menu {
+    align-self: center;
+    justify-self: center;
+    /* border: 1px solid black; */
+    /* height: 20vh; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin-right: 3vw;
+    
+}
+
+#botaoCabeca:hover {
+   background-color: rgb(255, 119, 85);
+   color: black;
+   transform: scale(1.3, 1.3);
+}
+
+#botaoCabeca {
+    text-align: center;
+    align-self: center;
+    color: white;
+    height: 4vh;
+    width: 7vw;
+    border-radius: 2vh;
+    background-color: black;
+}
+
+h1 {
+    font-size: 10vh;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pesquisar {
+    top: 15vh;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 94vw 6vw;
+    grid-template-rows: 8vh;
+}
+
+#pesquisa {
+    outline: unset;
+    font-size: 5vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    /* height: 7vh; */
+    padding: 0 3vw;
+    background-color: azure;
+    border: transparent;
+}
+
+#botaoPesquisa {
+    border: transparent;
+    border-left: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    padding: 0 3vw;
+    background-color: azure;
+    padding-left: 3vh;
+}
+
+#botaoPesquisa:hover {
+    background-color: rgb(255, 119, 85);
+}
+
+#lupa {
+    height: 5vh;
+    padding-left: 0;
+    padding-top: 1vh;
+
+}
+
+#primeiroArtigo {
+    width: 100vw;
+    background-color: rgb(255, 119, 85);
+    height: 45.7vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#pesquisaPorTipo {
+    display: grid;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    grid-template-rows: 34% 34% 34%;
+    justify-items: stretch;
+    align-items: stretch;
+    /* gap: 1vh; */
+}
+
+#pesquisaPorTipo #tipos:hover {
+    border-radius: 1vh;
+    box-shadow: 0 5vh 15vh 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.25, 1.25);
+    background-color: black;
+    color: rgb(255, 119, 85);;
+
+}
+
+#tipos {
+    display: block;
+    /* width: 33vw; */
+    text-align: center;
+    font-size: 25px;
+    /* border: 1px solid black; */
+    color: black;
+    padding-top: .5vh;
+}
+
+a {
+    text-decoration: none;
+    color: white
 }
 
 #promocao {
-    height: 50vh;
+    width: 100vw;
 }
 
 tr, td {
     height: 25vh;
     width: 25vw;
+}
+
+#listaDeProdutos {
+    margin-top: -1vh;
+    width: 100vw;
+    background-color: rgb(255, 119, 85);
+    /* border: 2px solid black; */
+    height: 175vh;
+    padding-top: 8vh;
+    display: grid;
+    grid-template-rows: 33vh 33vh 33vh;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    justify-items: center;
+    row-gap: 25vh;
+    /* justify-items: space-between; */
+}
+
+#produto {
+    width: 19vw;
+    /* border: 1px solid black; */
+    border-radius: 2vh;
+}
+#produto:hover {
+    transform: scale(1.3, 1.3);
+}
+
+#maisInformacoes {
+    background-color: black;
+    color: white;
+    width: 98.3vw;
+    padding: 2vh;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 22vw;
+    height: 35vh;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+#formularioContato div {
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContato button {
+    width: 22vw;
+    margin-top: 1vh;
+}
+
+
+
+#botaoContato {
+    width: 20vw;
+}
+
+footer {
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 30vw 30vw 35vw;
+
+}
+
+#volteSempre {
+    font-size: 8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 3vh;
+}
+
+#iconesRedesSociais {
+    display: grid;
+    grid-template-columns: 5vw 5vw 5vw;
+    justify-items: center;
+    align-items: center;
+}
+
+#iconesRedesSociais a:hover {
+   transform: scale(2, 2);
 }
