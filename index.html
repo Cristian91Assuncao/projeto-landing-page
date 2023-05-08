@@ -1,115 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Empresa 4FOOD</title>
 </head>
+
 <body>
     <header>
 
-        <img src="./imagens-e-icones/4food.png" alt="4FOOD" id="imgLogo">        
+        <img src="./imagens-e-icones/4food.png" alt="4FOOD" id="imgLogo">
 
-        <a href="https://labenu.com.br/">Menu</a>
-        <a href="https://labenu.com.br/">Criar Conta</a>
-        <a href="https://labenu.com.br/">Login</a>
-        
+        <a href="https://labenu.com.br/" id="menu"><img src="./imagens-e-icones/icone menu.png" alt="icone-menu"></a>
+        <div id="login">
+            <a href="https://labenu.com.br/" id="botaoCabeca" onmouse="mudaCor()">Login</a>
+            <a href="https://labenu.com.br/" id="botaoCabeca">Criar Conta</a>
+        </div>
+
     </header>
 
     <main>
 
-        <h1>O que você precisa, você encontra aqui!</h1>
-        <input type="text" placeholder="PESQUISAR">
+        <article id="primeiroArtigo">
+            <h1>O que você precisa, <br> você encontra aqui!</h1>
 
-        <h2>TEMAS DE PESQUISA ABAIXO</h2>
-        <ul>
-            <li>Tema 1</li>
-            <li>Tema 2</li>
-            <li>Tema 3</li>
-            <li>Tema 4</li>
-            <li>Tema 5</li>
-            <li>Tema 6</li>
-        </ul>
+            <form id="pesquisar" action="#">
+                <input type="text" placeholder="PESQUISAR.." id="pesquisa">
+                <a href="https://labenu.com.br/" id="botaoPesquisa"  onmouseenter="mudarCor()">
+                    <img src="./imagens-e-icones/lupa.png" alt="lupa" id="lupa">
+                </a>
+            </form>
 
-        <h2>IMAGEM DE PROMOÇÃO ABAIXO</h2>
-        <img src="./imagens-e-icones/Promocao_Mães_Clube_Site.png" alt="promocao-de-dia-das-maes" id="promocao">
-
-        <article>
-            <h2>LISTA PRODUTOS ABAIXO</h2>
-        <table>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-            </tr>
-
-            <tr>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-            </tr>
-
-            <tr>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-            </tr>
-        </table>
+            <div id="pesquisaPorTipo">
+                <a href="https://labenu.com.br/" ><p id="tipos">Casa</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Alimentos</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Eletrodomésticos</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Tecnologia</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Ferramentas</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Brinquedos</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Automotivo</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Esportes</p></a>
+                <a href="https://labenu.com.br/" ><p id="tipos">Musculação</p></a>
+            </div>
 
         </article>
+        <a href="labenu.com.br">
+            <img src="./imagens-e-icones/Promocao_Mães_Clube_Site.png" alt="promocao-de-dia-das-maes" id="promocao">
+        </a>
         
-        <article>
-            
-        <h3>ATENDIMENTO LOJA FÍSICA</h3>
-        <p> Domingo a Sexta-feira das 11:00 às 19:00
-            Sábado das 10:00 às 20:00
-            Rua Pamplona, nº 1135
-            Jardim Paulista - SP
-            Metro Trianon Masp</p>
 
-        <h3>INSTITUCIONAL</h3>
-        <p> Sobre a Toyshow
-            Política de privacidade
-            e segurança</p>
+        <article id="listaDeProdutos">
 
-        <h3>SERVIÇOS</h3>
-        <P> Pré venda
-            Política de entrega
-            Troca e devoluções
-            Seja um Franqueado</P>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 1.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 2.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 3.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 4.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 5.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br"><img src="./imagens-e-icones/Produto 6.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br"><img src="./imagens-e-icones/Produto 7.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 8.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 9.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 10.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 11.png" alt="" id="produto">
+            </a>
+            <a href="labenu.com.br">
+                <img src="./imagens-e-icones/Produto 12.png" alt="" id="produto">
+            </a>
 
-        <h3>FALE CONOSCO</h3>
-        <form action="#">
-            <label for="nome">Seu Nome</label>
-            <input type="text" id="nome">
-            
-            <label for="email">Seu E-mail</label>
-            <input type="text" id="email">
-            
-            <label for="telefone">Seu Telefone</label>
-            <input type="text" id="telefone">
-        </form>
+        </article>
+
+        <article id="maisInformacoes">
+
+            <div>
+                <h3>ATENDIMENTO LOJA FÍSICA</h3> <br>
+                <p> Domingo a Sexta-feira das 11:00 às 19:00 <br> <br>
+                    Sábado das 10:00 às 20:00 <br> <br>
+                    Rua dos Labenautas, nº 2023 <br> <br>
+                    Jardim Florestal - RJ</p>
+            </div>
+
+            <div>
+                <h3>INSTITUCIONAL</h3> <br>
+                <ul>
+                    <a href="labenu.com.br">
+                        <li>Sobre a Toyshow</li>
+                    </a> <br>
+
+                    <a href="labenu.com.br">
+                        <li>Política de privacidade e segurança</li>
+                    </a> <br>
+                    
+                    
+                </ul>
+            </div>
+
+            <div>
+                <h3>SERVIÇOS</h3> <br>
+                <ul>
+                    <a href="labenu.com.br">
+                        <li>Pré venda</li>
+                    </a> <br>
+
+                    <a href="labenu.com.br">
+                        <li>Política de entrega</li>
+                    </a> <br>
+                    
+                    <a href="labenu.com.br">
+                        <li>Troca e devoluções</li>
+                    </a> <br>
+
+                    <a href="labenu.com.br">
+                        <li>Seja um Franqueado</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div>
+                <h3>FALE CONOSCO</h3> <br>
+
+                <form action="#" id="formularioContato">
+                    <div>
+                        <label for="nome">Seu Nome</label>
+                        <input type="text" id="nome">
+                    </div>
+
+                    <div>
+                        <label for="email">Seu E-mail</label>
+                        <input type="text" id="email">
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="4" id="mensagem" placeholder="Digite sua mensagem aqui!"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="botaoContato">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
 
         </article>
 
     </main>
 
     <footer>
-        <img src="./imagens-e-icones/face logo.png" alt="Facebook-4FOOD">
-        <img src="./imagens-e-icones/insta logo.png" alt="Instagram-4FOOD">
-        <p>Volte Sempre!</p>
+        <div id="iconesRedesSociais">
+            <a href="facebook.com">
+                <img src="./imagens-e-icones/face logo.png" alt="Facebook-4FOOD">
+            </a>
+            <a href="instagram.com">
+                <img src="./imagens-e-icones/insta logo.png" alt="Instagram-4FOOD">
+            </a>
+            <a href="twitter.com">
+                <img src="./imagens-e-icones/twiter logo.png" alt="twiter-4FOOD">
+            </a>
+
+        </div>
+        <p id="volteSempre">Volte Sempre!</p>
+
+        <img src="./imagens-e-icones/bandeiras.png" alt="bandeiras-de-cartoes" id="imgRodape">
     </footer>
 </body>
+
 </html>
