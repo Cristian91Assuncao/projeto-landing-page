@@ -1,12 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: 0;
 }
 
 header {
     top: 0;
     position: fixed;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: white;
     height: 15vh;
     display: flex;
@@ -14,6 +15,7 @@ header {
     align-items: center;
     position: sticky;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    column-gap: 4vw;
 }
 
 #imgLogo {
@@ -25,18 +27,49 @@ header {
 #menu {
     align-self: center;
     justify-self: center;
+    margin-left: 5vw;
     /* border: 1px solid black; */
     /* height: 20vh; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
 }
 
-#login {
+#listaMenu {
     display: flex;
+    flex-direction: row;
+    column-gap: 3vh;
+}
+
+#linkLojas, #linkInstitucional, #linkServicos, #linkFaleConosco {
+    color: black;
+}
+
+h3 {
+    font-size: 3vh;
+}
+#login {
+    /* display: flex; */
+    height: 15vh;
     justify-content: center;
     align-items: center;
     gap: 3vh;
     margin-right: 3vw;
+    font-size: 1.5vw;
     
+}
+/* #login.input div a {
+    height: 10%
+} */
+
+#loginOuCriacao {
+    display: flex;
+}
+
+#criarConta {
+    /* display:inline; */
+    color: black;
+    margin-left: 2vw;
+    font-size: 2.5vh;
 }
 
 #botaoCabeca:hover {
@@ -46,11 +79,13 @@ header {
 }
 
 #botaoCabeca {
-    text-align: center;
-    align-self: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     color: white;
-    height: 4vh;
-    width: 7vw;
+    height: 5vh;
+    width: 8vw;
+    /* padding-top: 1vh; */
     border-radius: 2vh;
     background-color: black;
 }
@@ -86,21 +121,29 @@ h1 {
     padding: 0 3vw;
     background-color: azure;
     padding-left: 3vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;    
+    padding-left: 2vh;
 }
 
 #botaoPesquisa:hover {
     background-color: rgb(255, 119, 85);
+    border: 4px solid black;
 }
 
 #lupa {
+    display: grid;
+    justify-items: center;
+    align-items: center;
     height: 5vh;
-    padding-left: 0;
-    padding-top: 1vh;
+    /* padding-left: 0;
+    padding-top: 1vh; */
 
 }
 
 #primeiroArtigo {
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(255, 119, 85);
     height: 45.7vh;
     display: flex;
@@ -109,8 +152,8 @@ h1 {
 
 #pesquisaPorTipo {
     display: grid;
-    grid-template-columns: 33.3vw 33.3vw 33.3vw;
-    grid-template-rows: 34% 34% 34%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: stretch;
     /* gap: 1vh; */
@@ -141,7 +184,11 @@ a {
 }
 
 #promocao {
-    width: 100vw;
+    width: 100%;
+}
+#promocao:hover {
+    transform: scale(1.02, 1.02);
+    border: 1px solid black;
 }
 
 tr, td {
@@ -151,38 +198,46 @@ tr, td {
 
 #listaDeProdutos {
     margin-top: -1vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(255, 119, 85);
     /* border: 2px solid black; */
-    height: 175vh;
+    height: 180vh;
     padding-top: 8vh;
     display: grid;
-    grid-template-rows: 33vh 33vh 33vh;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
+    /* grid-template-rows: 33vh 33vh 33vh; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    row-gap: 25vh;
+    /* row-gap: 25vh; */
     /* justify-items: space-between; */
 }
 
 #produto {
-    width: 19vw;
+    width: 80%;
     /* border: 1px solid black; */
     border-radius: 2vh;
 }
 #produto:hover {
-    transform: scale(1.3, 1.3);
+    transform: scale(1.2, 1.2);
 }
 
 #maisInformacoes {
     background-color: black;
     color: white;
-    width: 98.3vw;
+    /* width: 98.3vw; */
     padding: 2vh;
+    padding-left: 3px;
     display: grid;
     grid-template-columns: 25vw 25vw 25vw 22vw;
     height: 35vh;
     border: 1px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+li:hover {
+    color: black;
+    background-color: white;
+    border-radius: 1vh;
+    transform: scale(1.0, 1.1);
 }
 
 ul {
@@ -209,15 +264,16 @@ ul {
 }
 
 footer {
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     justify-items: center;
-    grid-template-columns: 30vw 30vw 35vw;
+    grid-template-columns: 10vw 45vw 35vw;
 
 }
 
 #volteSempre {
     font-size: 8vh;
+    /* border: 1px solid black; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 3vh;
 }
@@ -227,8 +283,108 @@ footer {
     grid-template-columns: 5vw 5vw 5vw;
     justify-items: center;
     align-items: center;
+    margin-left: 7vw;
+    /* border: 1px solid black; */
+    
 }
 
 #iconesRedesSociais a:hover {
    transform: scale(2, 2);
+}
+
+
+@media screen and (max-device-width: 480px) {
+
+    #listaMenu {
+        display: none;
+    }
+
+    #menu {
+        align-self: center;
+        justify-self: center;
+        margin-left: 5vw;
+        /* border: 1px solid black; */
+        /* height: 20vh; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: block;
+    }
+    
+
+    #listaDeProdutos {
+        display: grid;
+        /* grid-template-rows: 20vh 20vh 20vh 20vh 20vh; */
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    h1 {
+        font-size: 10vw;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #primeiroArtigo {
+        /* width: 100vw; */
+        background-color: rgb(255, 119, 85);
+        height: 45.7vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #primeiroArtigo {
+
+        height: 50vw;
+
+    }
+
+    #tipos {
+
+        font-size: 4.5vw;
+
+    }
+
+}
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+
+    
+    #listaMenu {
+        display: none;
+    }
+
+    #menu {
+        align-self: center;
+        justify-self: center;
+        margin-left: 5vw;
+        /* border: 1px solid black; */
+        /* height: 20vh; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: block; 
+    }
+
+    #listaDeProdutos {
+        display: grid;
+        /* grid-template-rows: 20vh 20vh 20vh 20vh 20vh; */
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    h1 {
+        font-size: 10vw;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #primeiroArtigo {
+
+        height: 50vw;
+
+    }
+
+    #tipos {
+
+        font-size: 4.5vw;
+
+    }
 }

@@ -13,12 +13,31 @@
 <body>
     <header>
 
-        <img src="./imagens-e-icones/4food.png" alt="4FOOD" id="imgLogo">
+        <a href="https://labenu.com.br/"><img src="./imagens-e-icones/4food.png" alt="4FOOD" id="imgLogo"></a>
+
+        <ul id="listaMenu">
+            <li><a id="linkLojas" href="#lojas">Lojas</a></li>
+            <li> <a id="linkInstitucional" href="#institucional">Institucional</a></li>
+            <li> <a id="linkServicos" href="#servicos">Serviços</a></li>
+            <li> <a id="linkFaleConosco" href="#faleConosco">Contato</a></li>
+        </ul>
 
         <a href="https://labenu.com.br/" id="menu"><img src="./imagens-e-icones/icone menu.png" alt="icone-menu"></a>
-        <div id="login">
-            <a href="https://labenu.com.br/" id="botaoCabeca" onmouse="mudaCor()">Login</a>
-            <a href="https://labenu.com.br/" id="botaoCabeca">Criar Conta</a>
+
+        <div id="login">            
+            <!-- <a href="https://labenu.com.br/" id="botaoCabeca" onmouse="mudaCor()">Login</a>
+            <a href="https://labenu.com.br/" id="botaoCabeca">Criar Conta</a> -->
+
+            <form>
+                <h3>Login</h3>
+                <input type="text" id="email" placeholder="E-mail">
+                <br>
+                <input type="password" id="senha" placeholder="Senha">
+                <button id="botaoEsconde" onclick="mostraSenha(event);" >Mostrar Senha</button><br>
+                <div id="loginOuCriacao"><button id="botaoLogin">Login</button>
+                <a href="https://labenu.com.br/" id="criarConta"><p>Criar Conta</p></a> </div>
+            </form>
+
         </div>
 
     </header>
@@ -48,45 +67,45 @@
             </div>
 
         </article>
-        <a href="labenu.com.br">
+        <a href="https://www.labenu.com.br">
             <img src="./imagens-e-icones/Promocao_Mães_Clube_Site.png" alt="promocao-de-dia-das-maes" id="promocao">
         </a>
         
 
         <article id="listaDeProdutos">
 
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 1.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 2.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 3.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 4.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 5.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br"><img src="./imagens-e-icones/Produto 6.png" alt="" id="produto">
+            <a href="https://www.labenu.com.br"><img src="./imagens-e-icones/Produto 6.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br"><img src="./imagens-e-icones/Produto 7.png" alt="" id="produto">
+            <a href="https://www.labenu.com.br"><img src="./imagens-e-icones/Produto 7.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 8.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 9.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 10.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 11.png" alt="" id="produto">
             </a>
-            <a href="labenu.com.br">
+            <a href="https://www.labenu.com.br">
                 <img src="./imagens-e-icones/Produto 12.png" alt="" id="produto">
             </a>
 
@@ -95,7 +114,7 @@
         <article id="maisInformacoes">
 
             <div>
-                <h3>ATENDIMENTO LOJA FÍSICA</h3> <br>
+                <h3 id="lojas">ATENDIMENTO LOJA FÍSICA</h3> <br>
                 <p> Domingo a Sexta-feira das 11:00 às 19:00 <br> <br>
                     Sábado das 10:00 às 20:00 <br> <br>
                     Rua dos Labenautas, nº 2023 <br> <br>
@@ -103,13 +122,13 @@
             </div>
 
             <div>
-                <h3>INSTITUCIONAL</h3> <br>
+                <h3 id="institucional">INSTITUCIONAL</h3> <br>
                 <ul>
-                    <a href="labenu.com.br">
+                    <a href="https://www.labenu.com.br">
                         <li>Sobre a Toyshow</li>
                     </a> <br>
 
-                    <a href="labenu.com.br">
+                    <a href="https://www.labenu.com.br">
                         <li>Política de privacidade e segurança</li>
                     </a> <br>
                     
@@ -118,21 +137,21 @@
             </div>
 
             <div>
-                <h3>SERVIÇOS</h3> <br>
+                <h3 id="servicos">SERVIÇOS</h3> <br>
                 <ul>
-                    <a href="labenu.com.br">
+                    <a href="https://www.labenu.com.br">
                         <li>Pré venda</li>
                     </a> <br>
 
-                    <a href="labenu.com.br">
+                    <a href="https://www.labenu.com.br">
                         <li>Política de entrega</li>
                     </a> <br>
                     
-                    <a href="labenu.com.br">
+                    <a href="https://www.labenu.com.br">
                         <li>Troca e devoluções</li>
                     </a> <br>
 
-                    <a href="labenu.com.br">
+                    <a href="https://www.labenu.com.br">
                         <li>Seja um Franqueado</li>
                     </a>
 
@@ -140,12 +159,12 @@
             </div>
 
             <div>
-                <h3>FALE CONOSCO</h3> <br>
+                <h3 id="faleConosco">FALE CONOSCO</h3> <br>
 
                 <form action="#" id="formularioContato">
                     <div>
                         <label for="nome">Seu Nome</label>
-                        <input type="text" id="nome">
+                        <input type="text" id="nome" value="Cristian">
                     </div>
 
                     <div>
@@ -159,7 +178,7 @@
                     </div>
 
                     <div>
-                        <button type="submit" id="botaoContato">Enviar</button>
+                        <button onclick="acaoClicar()" type="submit" id="botaoContato">Enviar</button>
                     </div>
 
                 </form>
@@ -171,13 +190,13 @@
 
     <footer>
         <div id="iconesRedesSociais">
-            <a href="facebook.com">
-                <img src="./imagens-e-icones/face logo.png" alt="Facebook-4FOOD">
+            <a href="https://www.facebook.com" target="blank">
+                <img src="./imagens-e-icones/face logo.png" alt="Facebook-4FOOD" >
             </a>
-            <a href="instagram.com">
+            <a href="https://www.instagram.com" target="blank">
                 <img src="./imagens-e-icones/insta logo.png" alt="Instagram-4FOOD">
             </a>
-            <a href="twitter.com">
+            <a href="https://www.twitter.com" target="blank">
                 <img src="./imagens-e-icones/twiter logo.png" alt="twiter-4FOOD">
             </a>
 
