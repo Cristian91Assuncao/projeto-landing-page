@@ -112,6 +112,7 @@ h1 {
     padding: 0 3vw;
     background-color: azure;
     border: transparent;
+    height: 5vw;
 }
 
 #botaoPesquisa {
@@ -125,6 +126,7 @@ h1 {
     justify-items: center;
     align-items: center;    
     padding-left: 2vh;
+    height: 5vw;
 }
 
 #botaoPesquisa:hover {
@@ -136,7 +138,7 @@ h1 {
     display: grid;
     justify-items: center;
     align-items: center;
-    height: 5vh;
+    height: 3vw;
     /* padding-left: 0;
     padding-top: 1vh; */
 
@@ -233,6 +235,13 @@ tr, td {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
+#maisInformacoes h3 {
+
+    font-size: 2vw;
+
+}
+
+
 li:hover {
     color: black;
     background-color: white;
@@ -272,10 +281,14 @@ footer {
 }
 
 #volteSempre {
-    font-size: 8vh;
+    font-size: 4vw;
     /* border: 1px solid black; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 3vh;
+}
+
+#imgRodape {
+    height: 7vw;
 }
 
 #iconesRedesSociais {
