@@ -106,7 +106,7 @@ h1 {
 
 #pesquisa {
     outline: unset;
-    font-size: 5vh;
+    font-size: 3vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
     /* height: 7vh; */
     padding: 0 3vw;
@@ -233,11 +233,12 @@ tr, td {
     height: 35vh;
     border: 1px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-size: 1.5vw;
 }
 
 #maisInformacoes h3 {
 
-    font-size: 2vw;
+    font-size: 3vw;
 
 }
 
@@ -284,11 +285,14 @@ footer {
     font-size: 4vw;
     /* border: 1px solid black; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 3vh;
+    /* padding-top: 3vh; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 #imgRodape {
-    height: 7vw;
+    height: 8vw;
 }
 
 #iconesRedesSociais {
